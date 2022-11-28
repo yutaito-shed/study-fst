@@ -12,6 +12,7 @@
     }
 
     &__item {
+        width: calc((100% - 13px * 3) / 4);
         position: relative;
         &:after {
             content: "";
