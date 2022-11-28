@@ -9,6 +9,7 @@
     &__list {
         display: flex;
         width: 100%;
+        align-items: flex-start;
         flex-wrap: wrap;
         gap: $gap;
         margin-top: 40px;
@@ -86,6 +87,7 @@
             }
         }
 
+        // center
         &--center {
 
             .c-article {
