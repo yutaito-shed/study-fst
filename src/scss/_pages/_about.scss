@@ -4,9 +4,26 @@
 
 .page-about{
 
-    // ---------- visual ----------
-    .visual{
+    // ---------- component  ----------
+    .c-btn--more {
+        margin-top: 80px;
     }
+
+    // ---------- slider sec  ----------
+    .slider {
+        margin: 120px 0 0;
+
+        .js-slider {
+            margin-top: 44px;
+        }
+    }
+
+    // ---------- article sec  ----------
+    .article {
+        margin-top: 100px;
+    }
+
+
 }
 
 @media screen and (max-width: $breakPoint){}

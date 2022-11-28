@@ -6,6 +6,8 @@
     
     &--h2 {
         @extend .c-text--h2;
+        margin: 70px 0 65px;
+        text-align: center;
     }
 
     &--h3 {
@@ -22,6 +24,12 @@
             left: 0;
             transform: translateY(-50%);
             background: $color-blue;
+        }
+
+        &--orange {
+            &:after {
+                background: $color-orange;
+            }
         }
     }
 }

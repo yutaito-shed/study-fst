@@ -30,17 +30,38 @@ block content
                             p.c-article__head 見出しテスト見出しテスト
                             p.c-article__desc
                                 | この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。                    
-                    li.c-article__item.c-article__item--wide
+                    li.c-article__item.c-article__item--landscape
                         p.c-article__head 見出しテスト見出しテスト
                         .c-article__2col
                             .c-article__thumb: img(src=page.root + "assets/images/home/thumb_03.jpg" alt="")
                             .c-article__txtbox
                                 p.c-article__desc
                                     | この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。
-                    li.c-article__item.c-article__item--wide.c-article__item--reverse
+                                .c-btn.c-btn--link
+                                    +btn({
+                                        more: false,
+                                        type: 'link',
+                                        txt: "LINK",
+                                        link: '/',
+                                        blank: true
+                                    })
+                    li.c-article__item.c-article__item--landscape.c-article__item--reverse
                         p.c-article__head 見出しテスト見出しテスト
                         .c-article__2col
                             .c-article__thumb: img(src=page.root + "assets/images/home/thumb_03.jpg" alt="")
                             .c-article__txtbox
                                 p.c-article__desc
                                     | この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。
+                                +btn({
+                                    more: false,
+                                    type: 'file',
+                                    txt: "PDF",
+                                    link: '/',
+                                    blank: true
+                                })
+                +btn({
+                    more: true,
+                    txt: "SEE MORE",
+                    link: '/about/',
+                    blank: false,
+                })

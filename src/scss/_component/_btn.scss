@@ -3,11 +3,98 @@
 // ------------------------------
 
 .c-btn{
+
     a{
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        line-height: 1;
+    }
+
+    &__content {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    &__txt {
         text-align: center;
-		min-width: 200px;
-        padding: .65em;
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &--more {
+        text-align: center;
+
+        a {
+            width: 272px;
+            padding: 20px 30px;
+            border-radius: 110px;
+            border: 1px solid $color-gray05;
+            margin: 0 auto;
+        }
+
+        .c-btn {
+
+            &__txt {
+                font-size: 2.2rem;
+            }
+
+            &__icon {
+                width: 8px;
+            }
+
+
+        }
+
+    }
+
+    &--link,
+    &--file {
+
+        a {
+            width: 192px;
+            padding: 10px 13px;
+            border-radius: 7px;
+            min-height: 44px;
+        }
+
+        .c-btn {
+            
+            &__txt {
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    &--link {
+        a {
+            background: $color-blue;
+        }
+        .c-btn {
+            &__icon {
+                width: 8px;
+            }
+        }
+    }
+
+    &--file {
+        a {
+            background: $color-pink;
+        }
+        .c-btn {
+            &__icon {
+                width: 18px;
+            }
+        }
     }
 }
 

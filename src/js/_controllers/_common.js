@@ -1,6 +1,7 @@
 import ReplaceImg from '../_modules/_common/_replaceImg';
 import Scroll from '../_modules/_common/_scroll';
 import Inview from '../_modules/_common/_inview';
+import Slider from '../_modules/_common/_slider';
 
 export default class {
     constructor(){
@@ -14,5 +15,8 @@ export default class {
 
         this.inview = new Inview();
         this.inview.init();
+
+        this.slider = new Slider();
+        this.slider.init();
     }
 }

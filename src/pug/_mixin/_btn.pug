@@ -1,3 +1,39 @@
 mixin btn(param)
-    .c-btn
-        a(href=param.link)
+    - if (param.more)
+        .c-btn.c-btn--more
+            - if (param.blank) 
+                a(href=param.link target="_blank")
+                    .c-btn__content
+                        .c-btn__txt #{param.txt}
+                        .c-btn__icon: img(src=page.root + "assets/images/common/arrow.svg" alt="")
+            - else
+                a(href=param.link)
+                    .c-btn__content
+                        .c-btn__txt #{param.txt}
+                        .c-btn__icon: img(src=page.root + "assets/images/common/arrow.svg" alt="")
+    - else 
+        - if (param.type === "link")
+            .c-btn.c-btn--link
+                - if (param.blank) 
+                    a(href=param.link target="_blank")
+                        .c-btn__content
+                            .c-btn__txt #{param.txt}
+                            .c-btn__icon: img(src=page.root + "assets/images/common/arrow.svg" alt="")
+                - else
+                    a(href=param.link)
+                        .c-btn__content
+                            .c-btn__txt #{param.txt}
+                            .c-btn__icon: img(src=page.root + "assets/images/common/arrow.svg" alt="")
+
+        - if (param.type === "file")
+            .c-btn.c-btn--file
+                - if (param.blank) 
+                    a(href=param.link target="_blank")
+                        .c-btn__content
+                            .c-btn__txt #{param.txt}
+                            .c-btn__icon: img(src=page.root + "assets/images/common/file.svg" alt="")
+                - else
+                    a(href=param.link)
+                        .c-btn__content
+                            .c-btn__txt #{param.txt}
+                            .c-btn__icon: img(src=page.root + "assets/images/common/file.svg" alt="")

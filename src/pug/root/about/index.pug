@@ -11,3 +11,51 @@ block vars
 block content
 
     +page-title({text: 'About Page', page: 'about'})
+
+    section.c-section.slider
+        .l-inner
+            h3.c-head--h3.c-head--h3--orange 見出しテスト見出しテスト見出しテスト
+            .js-slider
+                .js-slider__mainImg: img(src=page.root + "assets/images/about/thumb_01.jpg" alt="")
+                ul.js-slider__list
+                    li.js-slider__item: img(src=page.root + "assets/images/about/thumb_01.jpg" alt="thumb_01")
+                    li.js-slider__item: img(src=page.root + "assets/images/about/thumb_02.jpg" alt="thumb_02")
+                    li.js-slider__item: img(src=page.root + "assets/images/about/thumb_03.jpg" alt="thumb_03")
+                    li.js-slider__item: img(src=page.root + "assets/images/about/thumb_04.jpg" alt="thumb_04")
+
+    section.c-section.article
+        .l-inner 
+            .l-content
+                h3.c-head--h3 見出しテスト見出しテスト見出しテスト
+                ul.c-article__list
+                    li.c-article__item 
+                        .c-article__thumb: img(src=page.root + "assets/images/home/thumb_01.jpg" alt="")
+                        .c-article__txtbox
+                            p.c-article__head 見出しテスト見出しテスト
+                            p.c-article__desc
+                                | この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。                    
+                    li.c-article__item
+                        .c-article__txtbox
+                            p.c-article__head 見出しテスト見出しテスト
+                            p.c-article__desc
+                                | この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。                    
+                    li.c-article__item.c-article__item--landscape.c-article__item--center
+                        p.c-article__head.c-text--center 見出しテスト見出しテスト
+                        .c-article__2col
+                            .c-article__txtbox
+                                p.c-article__desc
+                                    | この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。
+                                .c-btn.c-btn--link
+                                    +btn({
+                                        more: false,
+                                        type: 'link',
+                                        txt: "LINK",
+                                        link: '/',
+                                        blank: true
+                                    })
+                +btn({
+                    more: true,
+                    txt: "INDEX",
+                    link: '/',
+                    blank: false,
+                })

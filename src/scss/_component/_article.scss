@@ -26,6 +26,12 @@
         margin-bottom: 20px;
     }
 
+    &__txtbox {
+        .c-btn {
+            margin-top: 40px;
+        }
+    }
+
     &__head {
         color: $color-gray03;
         @extend .c-text--h4;
@@ -40,8 +46,8 @@
     // type
     &__item {
 
-        // wide
-        &--wide {
+        // landscape
+        &--landscape {
             width: 100%;
 
             .c-article {
@@ -87,7 +93,13 @@
                 &__head {
                     text-align: center;
                 }
-                
+
+            }
+
+            .c-btn {
+                a {
+                    margin: 0 auto;
+                }
             }
 
         }

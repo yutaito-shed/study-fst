@@ -4,9 +4,12 @@
 
 .page-home{
 
-    // ---------- visual ----------
-    .visual{
+    // ---------- component  ----------
+    .c-btn--more {
+        margin-top: 80px;
     }
+
+    
 }
 
 @media screen and (max-width: $breakPoint){}
