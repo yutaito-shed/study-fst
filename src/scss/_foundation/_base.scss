@@ -7,11 +7,12 @@ html{
 }
 body{
     min-width: $site-w-min;
-    background: $color-white;
+    background: $color-gray01;
     color: $color-black;
     line-height: 1.6;
     font-size: 1.4rem;
-    @extend .h-font--yugo;
+    font-weight: 400;
+    @extend .h-font--inter-noto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     word-wrap: break-word;

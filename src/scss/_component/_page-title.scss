@@ -1,0 +1,22 @@
+// ------------------------------
+// page-title
+// ------------------------------
+
+.c-page-title{
+    width: 100%;
+    padding: 78px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page-home {
+
+    .c-page-title {
+        padding: 215px 0;
+    }
+
+}
+
+
+@media screen and (max-width: $breakPoint){}

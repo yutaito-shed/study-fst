@@ -1,11 +1,10 @@
 // ------------------------------
-// footer
+// content
 // ------------------------------
 
-.c-footer{
-    width: 100%;
-    height: $footer-h-pc;
-    background: $color-gray03;
+.l-content{
+    padding: 62px 110px 100px;
+    background: $color-white;
 }
 
 @media screen and (max-width: $breakPoint){}

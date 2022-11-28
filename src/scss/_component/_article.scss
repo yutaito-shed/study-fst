@@ -1,0 +1,99 @@
+// ------------------------------
+// article
+// ------------------------------
+
+.c-article {
+
+    $gap: 40px; 
+
+    &__list {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: $gap;
+        margin-top: 40px;
+    }
+
+    &__item {
+        width: calc((100% - #{$gap}) / 2);
+        padding: 36px;
+        border-radius: 10px;
+        border: 1px solid $color-gray02;
+    }
+
+    &__thumb {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__head {
+        color: $color-gray03;
+        @extend .c-text--h4;
+        @extend .c-text--notoLight;
+    }
+
+    &__desc {
+        @extend .c-text--body;
+        margin-top: 10px;
+    }
+
+    // type
+    &__item {
+
+        // wide
+        &--wide {
+            width: 100%;
+
+            .c-article {
+
+                &__2col {
+                    display: flex;
+                    gap: 30px;
+                }
+
+                &__thumb {
+                    width: 43.06%;
+                    margin: 0;
+                }
+
+                &__txtbox {
+                    flex: 1;
+                    margin: 0;
+                }
+
+                &__head {
+                    margin-bottom: 20px;
+                }
+
+            }
+        }
+
+        // reverse
+        &--reverse {
+
+            .c-article {
+
+                &__2col {
+                    flex-direction: row-reverse;
+                }
+
+            }
+        }
+
+        &--center {
+
+            .c-article {
+
+                &__head {
+                    text-align: center;
+                }
+                
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (max-width: $breakPoint){}

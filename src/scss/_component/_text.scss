@@ -2,18 +2,47 @@
 // text
 // ------------------------------
 
-.c-text--1{
-    font-size: 3.2rem;
+.c-text--h1{
+    font-size: 5.2rem;
 }
-.c-text--2{
-    font-size: 2.4rem;
+.c-text--h2{
+    font-size: 4.2rem;
 }
-.c-text--3{
-    font-size: 1.8rem;
+.c-text--h3{
+    font-size: 2.8rem;
 }
-.c-text--center{
-    text-align: center;
+.c-text--h4 {
+    font-size: 2.2rem;
 }
+.c-text--body {
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+.c-text--interBold {
+    font-weight: 700;
+}
+.c-text--interRegular {
+    font-weight: 400;
+}
+
+.c-text--notoLight {
+    font-weight: 300;
+}
+.c-text--notoRegular {
+    font-weight: 400;
+}
+.c-text--notoBold {
+    font-weight: 700;
+}
+
+.c-text--regular {
+    font-weight: 400;
+}
+.c-text--bold {
+    font-weight: 700;
+}
+
 
 
 @media screen and (max-width: $breakPoint){

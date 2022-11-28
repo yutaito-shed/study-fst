@@ -10,4 +10,37 @@ block vars
 
 block content
 
-    section.visual
+    +page-title({text: 'Site Title', page: 'home'})
+
+    section.c-section
+        .l-inner 
+            h2.c-head--h2 見出しテスト見出しテスト見出しテスト
+            .l-content
+                h3.c-head--h3 見出しテスト見出しテスト見出しテスト
+                ul.c-article__list
+                    li.c-article__item 
+                        .c-article__thumb: img(src=page.root + "assets/images/home/thumb_01.jpg" alt="")
+                        .c-article__txtbox
+                            p.c-article__head 見出しテスト見出しテスト
+                            p.c-article__desc
+                                | この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。                    
+                    li.c-article__item
+                        .c-article__thumb: img(src=page.root + "assets/images/home/thumb_02.jpg" alt="")
+                        .c-article__txtbox
+                            p.c-article__head 見出しテスト見出しテスト
+                            p.c-article__desc
+                                | この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。                    
+                    li.c-article__item.c-article__item--wide
+                        p.c-article__head 見出しテスト見出しテスト
+                        .c-article__2col
+                            .c-article__thumb: img(src=page.root + "assets/images/home/thumb_03.jpg" alt="")
+                            .c-article__txtbox
+                                p.c-article__desc
+                                    | この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。
+                    li.c-article__item.c-article__item--wide.c-article__item--reverse
+                        p.c-article__head 見出しテスト見出しテスト
+                        .c-article__2col
+                            .c-article__thumb: img(src=page.root + "assets/images/home/thumb_03.jpg" alt="")
+                            .c-article__txtbox
+                                p.c-article__desc
+                                    | この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。

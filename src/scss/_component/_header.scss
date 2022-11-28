@@ -2,6 +2,21 @@
 // header
 // ------------------------------
 
-.c-header{}
+.c-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: $header-h-pc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: $color-white;
+    padding: 0 24px;
+    z-index: 100;
+
+    &__logo {
+        width: 63px;
+    }
+}
 
 @media screen and (max-width: $breakPoint){}

@@ -2,6 +2,8 @@
 // main
 // ------------------------------
 
-.l-main{}
+.l-main{
+    padding: $header-h-pc 0 120px;
+}
 
 @media screen and (max-width: $breakPoint){}
